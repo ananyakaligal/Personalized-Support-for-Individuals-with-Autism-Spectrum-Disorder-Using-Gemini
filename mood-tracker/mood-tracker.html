@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker - Autism Support</title>
+    <link rel="stylesheet" href="../src/styles.css">
+    <link rel="stylesheet" href="../mood-tracker/mood-tracker.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Include the sidebar here -->
+        <nav class="sidebar">
+            <div class="logo">Autism Free</div>
+            <ul>
+                <li><a href="../src/index.html">Dashboard</a></li>
+                <li><a href="../daily-routine/daily-routine.html">Daily Routine</a></li>
+                <li><a href="../mood-tracker/mood-tracker.html">Mood Tracker</a></li>
+                <li><a href="../personal-ai/personal-ai.html">Personal AI</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+            <div class="user-profile">
+                <img src="../images/avatar-1.jpg" alt="User Avatar" class="avatar">
+                <span>Welcome, Alex</span>
+            </div>
+        </nav>
+        <main class="main-content">
+            <header>
+                <h1>Mood Tracker</h1>
+                <p class="date" id="currentDate"></p>
+            </header>
+            <div class="mood-tracker-container">
+                <section class="mood-input">
+                    <h2>How are you feeling right now?</h2>
+                    <div class="mood-slider-container">
+                        <input type="range" min="1" max="5" value="3" class="mood-slider" id="moodSlider">
+                        <div class="mood-labels">
+                            <span>😢</span>
+                            <span>😕</span>
+                            <span>😐</span>
+                            <span>🙂</span>
+                            <span>😄</span>
+                        </div>
+                    </div>
+                    <button id="logMoodBtn">Log Mood</button>
+                </section>
+                <section class="mood-factors">
+                    <h2>What's influencing your mood?</h2>
+                    <div class="factors-grid" id="factorsGrid">
+                        <!-- Factors will be dynamically added here -->
+                    </div>
+                </section>
+                <section class="mood-insights">
+                    <h2>Your Mood Insights</h2>
+                    <div class="mood-chart-container">
+                        <canvas id="moodChart"></canvas>
+                    </div>
+                    <div class="mood-patterns" id="moodPatterns">
+                        <!-- Mood patterns and suggestions will be dynamically added here -->
+                    </div>
+                </section>
+                <section class="mood-journal">
+                    <h2>Mood Journal</h2>
+                    <textarea id="moodJournal" placeholder="Write about your feelings, experiences, or thoughts..."></textarea>
+                    <button id="saveJournalBtn">Save Entry</button>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="mood-tracker.js"></script>
+</body>
+</html>

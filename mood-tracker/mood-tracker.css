@@ -1,0 +1,111 @@
+.mood-tracker-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.mood-input, .mood-factors, .mood-insights, .mood-journal {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mood-slider-container {
+    margin: 2rem 0;
+}
+
+.mood-slider {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 15px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #ff6b6b, #feca57, #48dbfb, #ff9ff3, #54a0ff);
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.mood-slider:hover {
+    opacity: 1;
+}
+
+.mood-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4a4a4a;
+    cursor: pointer;
+}
+
+.mood-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+#logMoodBtn, #saveJournalBtn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#logMoodBtn:hover, #saveJournalBtn:hover {
+    background-color: #3a7bc8;
+}
+
+.factors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.factor-item {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.factor-item.selected {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.mood-chart-container {
+    height: 300px;
+    margin-bottom: 1rem;
+}
+
+.mood-patterns {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+#moodJournal {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+@media (max-width: 768px) {
+    .mood-tracker-container {
+        grid-template-columns: 1fr;
+    }
+}

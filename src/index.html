@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="sidebar">
+            <div class="logo">Autism Free</div>
+            <ul>
+                <li><a href="../src/index.html">Dashboard</a></li>
+                <li><a href="../daily-routine/daily-routine.html">Daily Routine</a></li>
+                <li><a href="../mood-tracker/mood-tracker.html">Mood Tracker</a></li>
+                <li><a href="../personal-ai/personal-ai.html">Personal AI</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+            <div class="user-profile">
+                <img src="../images/avatar-1.jpg" alt="User Avatar" class="avatar">
+                <span>Welcome, Alex</span>
+            </div>
+        </nav>
+        <main class="main-content">
+            <header>
+                <h1>Your Dashboard</h1>
+                <div class="date">Thursday, July 25, 2024</div>
+            </header>
+            <div class="dashboard-grid">
+                <section class="daily-progress">
+                    <h2>Daily Progress</h2>
+                    <p>Great job! You've completed 3 out of 4 daily tasks.</p>
+                    <div class="progress-container">
+                        <svg class="progress-ring" width="150" height="75" viewBox="0 0 150 75">
+                            <path class="progress-ring__path" />
+                        </svg>
+                        <div class="progress-text">75%</div>
+                    </div>
+                    
+                </section>
+                <section class="mood-tracker">
+                    <h2>Today's Mood</h2>
+                    <p>How are you feeling today?</p>
+                    <div class="mood-selector">
+                        <button class="mood-btn" data-mood="happy">😊</button>
+                        <button class="mood-btn" data-mood="neutral">😐</button>
+                        <button class="mood-btn" data-mood="sad">😢</button>
+                        <button class="mood-btn" data-mood="angry">😠</button>
+                        <button class="mood-btn" data-mood="anxious">😰</button>
+                    </div>
+                </section>
+                <section class="upcoming-tasks">
+                    <h2>Upcoming Tasks</h2>
+                    <ul class="task-list">
+                        <li>
+                            <input type="checkbox" id="task1">
+                            <label for="task1">Take medication</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task2">
+                            <label for="task2">15-minute reading session</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task3">
+                            <label for="task3">Practice deep breathing</label>
+                        </li>
+                    </ul>
+                </section>
+                <section class="achievement-tracker">
+                    <h2>Weekly Achievements</h2>
+                    <div class="achievement-grid">
+                        <div class="achievement" data-achieved="true">
+                            <span class="achievement-icon">🏆</span>
+                            <span class="achievement-name">Completed all daily tasks</span>
+                        </div>
+                        <div class="achievement" data-achieved="false">
+                            <span class="achievement-icon">🧘</span>
+                            <span class="achievement-name">Practiced mindfulness for 5 days</span>
+                        </div>
+                        <div class="achievement" data-achieved="true">
+                            <span class="achievement-icon">📚</span>
+                            <span class="achievement-name">Read for 15 minutes daily</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="coping-strategies">
+                    <h2>Coping Strategies</h2>
+                    <div class="strategy-cards">
+                        <div class="strategy-card">
+                            <h3>Deep Breathing</h3>
+                            <p>Take 5 deep breaths, counting to 4 on each inhale and exhale.</p>
+                        </div>
+                        <div class="strategy-card">
+                            <h3>Grounding Exercise</h3>
+                            <p>Name 5 things you can see, 4 you can touch, 3 you can hear, 2 you can smell, and 1 you can taste.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

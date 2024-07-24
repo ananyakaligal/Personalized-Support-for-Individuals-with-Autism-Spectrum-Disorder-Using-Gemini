@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal AI - Autism Support</title>
+    <link rel="stylesheet" href="../src/styles.css">
+    <link rel="stylesheet" href="../personal-ai/personal-ai.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Include the sidebar here (copy from main HTML) -->
+        <nav class="sidebar">
+            <div class="logo">Autism Free</div>
+            <ul>
+                <li><a href="../src/index.html">Dashboard</a></li>
+                <li><a href="../daily-routine/daily-routine.html">Daily Routine</a></li>
+                <li><a href="../mood-tracker/mood-tracker.html">Mood Tracker</a></li>
+                <li><a href="../personal-ai/personal-ai.html">Personal AI</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+            <div class="user-profile">
+                <img src="../images/avatar-1.jpg" alt="User Avatar" class="avatar">
+                <span>Welcome, Alex</span>
+            </div>
+        </nav>
+        <main class="main-content">
+            <header>
+                <h1>Personal AI Assistant</h1>
+            </header>
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages">
+                    <!-- Messages will be dynamically added here -->
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="userInput" placeholder="Type your message here...">
+                    <button id="sendButton">Send</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../personal-ai/personal-ai.js"></script>
+</body>
+</html>
