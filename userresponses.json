@@ -1,0 +1,160 @@
+{
+    "dailyRoutine": [
+      {
+        "task1": "Study",
+        "time1": "13:30",
+        "description1": "Study for exams"
+      },
+      {
+        "task2": "Read book",
+        "time2": "15:00",
+        "description2": "Continue reading the book"
+      },
+      {
+        "task3": "Cook food",
+        "time3": "17:30",
+        "description3": "Cook food"
+      },
+      {
+        "task1": "Go for a walk",
+        "time1": "19:30",
+        "description1": "Take a walk to the nearby garden"
+      }
+    ],
+    "moodTracker": [
+
+      {
+        "date": "2024-08-01",
+        "moods": ["Happy", "Excited", "Neutral", "Sad", "Depressed"],
+        "mood for the dat": ["Happy"],
+        "factors": ["Sleep", "Exercise", "Diet"],
+        "mood influence": "Finished all work on time"
+      },
+
+      {
+        "date": "2024-08-02",
+        "moods": ["Happy", "Excited", "Neutral", "Sad", "Depressed"],
+        "mood for the dat": ["Neutral"],
+        "factors": ["Sleep", "Exercise", "Diet"],
+        "mood influence": "Need to do alot of work today"
+      }
+
+    ],
+    "autismSpecturmDisorderScreening": {
+      "date": "2024-07-29",
+      "answers": [
+        {
+          "question": "Is it easy for you to get eye contact with others?",
+          "answer": "No"
+        },
+
+        {
+            "question": "Do you pretend during play? (e.g., care for dolls, talk on a toy phone)",
+            "answer": "No"
+          },
+
+          {
+            "question": "If someone else is visibly upset, do you show signs of wanting to comfort them?",
+            "answer": "No"
+          },
+          {
+            "question": "Would you describe your first words as delayed compared to peers?",
+            "answer": "Yes"
+          },
+          {
+            "question": "Do you stare at nothing with no apparent purpose?",
+            "answer": "Yes"
+          },
+          {
+            "question": "Do you find changes in routine or environment to be highly distressing?",
+            "answer": "No"
+          },
+          {
+            "question": "Do you engage in repetitive behaviors or routines? (e.g., hand-flapping, lining up objects)",
+            "answer": "Yes"
+          },
+          {
+            "question": "Do you prefer solitary activities over social interactions?",
+            "answer": "Yes"
+          },
+          {
+            "question": "Do you have unusual or intense interests in specific topics or activities? (e.g., memorizing facts about trains)",
+            "answer": "Yes"
+          },
+          {
+            "question": "Do you struggle with conversational skills, such as taking turns or staying on topic?",
+            "answer": "Yes"
+          },
+          {
+            "question": "Do you experience sensory sensitivities, such as being overly sensitive to sounds, lights, or textures?",
+            "answer": "No"
+          },
+          {
+            "question": "Do you have difficulties in understanding or using nonverbal communication, such as gestures or body language?",
+            "answer": "Yes"
+          }
+      ]
+    },
+    "personalAI": [
+    {
+      "timestamp": "2024-07-01T09:15:23",
+      "message": "Hello, I'm feeling overwhelmed today. There's a lot of noise at work.",
+      "isUser": true
+    },
+    {
+      "timestamp": "2024-07-01T09:15:45",
+      "message": "I'm sorry to hear that you're feeling overwhelmed. Noise can indeed be very distressing, especially for individuals with autism. Have you tried using noise-cancelling headphones or earplugs?",
+      "isUser": false
+    },
+    {
+      "timestamp": "2024-07-01T09:16:30",
+      "message": "I have headphones, but I'm worried my coworkers will think I'm being rude if I wear them.",
+      "isUser": true
+    },
+    {
+      "timestamp": "2024-07-01T09:16:55",
+      "message": "Your concern is understandable. It might help to explain to your coworkers or supervisor that you sometimes need to use headphones to concentrate better. Many workplaces are becoming more understanding of neurodiversity. Would you like some tips on how to have this conversation?",
+      "isUser": false
+    },
+    {
+      "timestamp": "2024-07-01T09:17:40",
+      "message": "Yes, please. I'm not always good at explaining things like this.",
+      "isUser": true
+    },
+    {
+      "timestamp": "2024-07-01T09:18:10",
+      "message": "Here's a simple script you could use: 'I sometimes have difficulty concentrating with background noise. Would it be okay if I use headphones occasionally to help me focus better on my work?' Remember, it's okay to advocate for your needs.",
+      "isUser": false
+    },
+    {
+      "timestamp": "2024-07-01T09:19:05",
+      "message": "Thank you, that's helpful. I have another question. I've been invited to a team lunch tomorrow, but I'm anxious about it. What should I do?",
+      "isUser": true
+    },
+    {
+      "timestamp": "2024-07-01T09:19:30",
+      "message": "It's great that you've been included in the team lunch. Social situations can be challenging, but they're also opportunities. Here are a few suggestions: 1) You could ask about the restaurant in advance to check the menu. 2) It's okay to take breaks if you feel overwhelmed - you can excuse yourself to the restroom. 3) Prepare a few safe topics for small talk, like asking about weekend plans. Would you like more specific advice?",
+      "isUser": false
+    },
+    {
+      "timestamp": "2024-07-01T09:20:45",
+      "message": "Those are good ideas. I'm worried about making eye contact during conversations. It makes me uncomfortable.",
+      "isUser": true
+    },
+    {
+      "timestamp": "2024-07-01T09:21:10",
+      "message": "Your feelings about eye contact are valid. Many people with autism find direct eye contact challenging. Here are some strategies: 1) Look at the bridge of the nose instead of the eyes. 2) Alternate between brief eye contact and looking slightly away. 3) If needed, explain that you're listening even if you're not making constant eye contact. Remember, it's okay to interact in a way that's comfortable for you.",
+      "isUser": false
+    },
+    {
+      "timestamp": "2024-07-01T09:22:30",
+      "message": "Thank you for the advice. I feel a bit better about tomorrow now.",
+      "isUser": true
+    },
+    {
+      "timestamp": "2024-07-01T09:22:55",
+      "message": "You're welcome! I'm glad I could help. Remember, it's okay to take things at your own pace. If you need more support before or after the lunch, feel free to chat with me again. Good luck tomorrow!",
+      "isUser": false
+    }
+  ]
+}
