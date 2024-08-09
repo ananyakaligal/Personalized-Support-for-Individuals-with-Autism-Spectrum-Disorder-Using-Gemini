@@ -11,7 +11,7 @@
     <div class="app-container">
         <!-- Sidebar -->
         <nav class="sidebar">
-            <div class="logo">Autism Free</div>
+            <div class="logo">AutiAura</div>
             <ul>
                 <li><a href="../src/index.html">Dashboard</a></li>
                 <li><a href="../daily-routine/daily-routine.html">Daily Routine</a></li>
@@ -29,13 +29,17 @@
         <!-- Main Content -->
         <div class="main-content">
             <header>
-                <h1>Take up this quiz to find Autism Traits</h1>
+                <h1>Autism Screening</h1>
             </header>
-            <div class="Screening-container">
+            <div class="welcome" id="welcome">
+                <h2>Complete This Quiz To Identify Autism Traits</h2>
+                <p></p>
+                <button class="question-button" onclick="startQuestionnaire()">Continue</button>
+            </div>
                 <div id="questionnaire">
                     <!-- Questions will be dynamically added here -->
                 </div>
-                <div id="submit-container">
+                <div id="submit-container" style="display: none;">
                     <button id="submit-btn">Submit Answers</button>
                 </div>
             </div>

@@ -14,50 +14,67 @@ const questions = [
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
-    const questionnaireContainer = document.getElementById('questionnaire');
-    
-    questions.forEach((question, index) => {
-        // Create question box
-        const questionBox = document.createElement('div');
-        questionBox.className = 'question-box';
-        
-        // Create question text
-        const questionText = document.createElement('p');
-        questionText.className = 'question';
-        questionText.textContent = `${index + 1}. ${question}`;
-        
-        // Create buttons
-        const buttonContainer = document.createElement('div');
-        buttonContainer.className = 'button-container';
-        
-        const yesButton = document.createElement('button');
-        yesButton.className = 'question-button'; // Add class for styling
-        yesButton.textContent = 'Yes';
-        yesButton.addEventListener('click', () => handleAnswer(index, 'Yes'));
-        
-        const noButton = document.createElement('button');
-        noButton.className = 'question-button'; // Add class for styling
-        noButton.textContent = 'No';
-        noButton.addEventListener('click', () => handleAnswer(index, 'No'));
-        
-        buttonContainer.appendChild(yesButton);
-        buttonContainer.appendChild(noButton);
-        
-        // Append elements to question box
-        questionBox.appendChild(questionText);
-        questionBox.appendChild(buttonContainer);
-        
-        // Append question box to questionnaire container
-        questionnaireContainer.appendChild(questionBox);
-    });
+    document.getElementById('submit-container').style.display = 'none';
 });
 
+function startQuestionnaire() {
+    document.getElementById('welcome').style.display = 'none';
+    document.getElementById('questionnaire').style.display = 'block';
+    showQuestion(0);
+}
+
+let currentQuestion = 0;
 const answers = {};
+
+function showQuestion(index) {
+    const questionnaireContainer = document.getElementById('questionnaire');
+    questionnaireContainer.innerHTML = ''; // Clear previous question
+
+    // Create question box
+    const questionBox = document.createElement('div');
+    questionBox.className = 'question-box';
+    
+    // Create question text
+    const questionText = document.createElement('p');
+    questionText.className = 'question';
+    questionText.textContent = `${index + 1}. ${questions[index]}`;
+    
+    // Create buttons
+    const buttonContainer = document.createElement('div');
+    buttonContainer.className = 'button-container';
+    
+    const yesButton = document.createElement('button');
+    yesButton.className = 'question-button';
+    yesButton.textContent = 'Yes';
+    yesButton.addEventListener('click', () => handleAnswer(index, 'Yes'));
+    
+    const noButton = document.createElement('button');
+    noButton.className = 'question-button';
+    noButton.textContent = 'No';
+    noButton.addEventListener('click', () => handleAnswer(index, 'No'));
+    
+    buttonContainer.appendChild(yesButton);
+    buttonContainer.appendChild(noButton);
+    
+    // Append elements to question box
+    questionBox.appendChild(questionText);
+    questionBox.appendChild(buttonContainer);
+    
+    // Append question box to questionnaire container
+    questionnaireContainer.appendChild(questionBox);
+}
 
 function handleAnswer(questionIndex, answer) {
     answers[questionIndex] = answer;
     console.log(`Question ${questionIndex + 1}: ${answer}`);
-    // Optional: Add code to handle submission or further processing
+
+    currentQuestion++;
+    if (currentQuestion < questions.length) {
+        showQuestion(currentQuestion);
+    } else {
+        document.getElementById('questionnaire').style.display = 'none';
+        document.getElementById('submit-container').style.display = 'block';
+    }
 }
 
 document.getElementById('submit-btn').addEventListener('click', () => {
